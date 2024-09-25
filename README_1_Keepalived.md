@@ -11,13 +11,7 @@
 
 <img src = "9-01-img-keepalived/HW-9-01-HSRP-Router1.png" width = 100%>
 
-![router 1 configuring](9-01-img-keepalived/HW-9-01-HSRP-Router1.png)
-
-<img src = "9-01-img-keepalived/HW-9-01-HSRP-Router2.png" width = 100%>
-
 ![router 2 configuring](9-01-img-keepalived/HW-9-01-HSRP-Router2.png)
-
-<img src = "9-01-img-keepalived/HW-9-01-HSRP-Router2.png" width = 100%>
 
 ![whole schema](9-01-files-pkt/hsrp_advanced.pkt)
 
