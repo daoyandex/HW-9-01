@@ -19,6 +19,10 @@
 HAproxy должен балансировать только тот http-трафик, который адресован домену example.local
 На проверку направьте конфигурационный файл haproxy, скриншоты, где видно перенаправление запросов на разные серверы при обращении к HAProxy c использованием домена example.local и без него.
 
+<img src = "9-02-img-haproxy-task-2/HW-9-02-task-2-PythonServer-9997.png" width = 100%>
+<img src = "9-02-img-haproxy-task-2/HW-9-02-task-2-PythonServer-9998.png" width = 100%>
+<img src = "9-02-img-haproxy-task-2/HW-9-02-task-2-PythonServer-9999.png" width = 100%>
+
 ![HAProxy layer 7 stats](9-02-img-haproxy-task-2/HW-9-02-task-2-haproxy-layer-7-stats.png)
 ![HAProxy - terminal](9-02-img-haproxy-task-2/HW-9-02-task-2-haproxy-layer-7-terminal.png)
 ![haproxy.cfg](9-02-files-haproxy-task-2/haproxy.cfg)
