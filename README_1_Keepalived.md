@@ -9,9 +9,17 @@
 Для проверки корректности настройки, разорвите один из кабелей между одним из маршрутизаторов и Switch0 и запустите ping между PC0 и Server0.
 На проверку отправьте получившуюся схему в формате pkt и скриншот, где виден процесс настройки маршрутизатора.
 
-![router 1 configuring](img_keepalived/HW-9-01-HSRP-Router1.png)
-![router 2 configuring](img_keepalived/HW-9-01-HSRP-Router2.png)
-![whole schema](files_pkt/hsrp_advanced.pkt)
+<img src = "9-01-img-keepalived/HW-9-01-HSRP-Router1.png" width = 100%>
+
+![router 1 configuring](9-01-img-keepalived/HW-9-01-HSRP-Router1.png)
+
+<img src = "9-01-img-keepalived/HW-9-01-HSRP-Router2.png" width = 100%>
+
+![router 2 configuring](9-01-img-keepalived/HW-9-01-HSRP-Router2.png)
+
+<img src = "9-01-img-keepalived/HW-9-01-HSRP-Router2.png" width = 100%>
+
+![whole schema](9-01-files-pkt/hsrp_advanced.pkt)
 
 ---
 
@@ -23,9 +31,9 @@
 На проверку отправьте получившейся bash-скрипт и конфигурационный файл keepalived, а также скриншот с демонстрацией переезда плавающего ip на другой сервер в случае недоступности порта или файла index.html
 
 
-![switch virtual ip-address](img_keepalived/HW-9-01-keepalived-2.png)
-![script](files_pkt/check_webserver_available.sh)
-![keepalived.conf](files_pkt/keepalived.conf)
+![switch virtual ip-address](9-01-img-keepalived/HW-9-01-keepalived-2.png)
+![script](9-01-files-pkt/check_webserver_available.sh)
+![keepalived.conf](9-01-files-pkt/keepalived.conf)
 
 ---
 
