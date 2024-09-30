@@ -29,10 +29,19 @@ $ rsync -a --progress --checksum --exclude '.*/' /home/user/testhomedir/* /tmp/b
 
 #### Версии Файлов crontab: 
 - ежеминутный в собственный лог-файл
+``` bash
+*/1 * * * * ~/HW-9-Reliability/9-03-files-rsync/backupscript.sh >> ~/HW-9-Reliability/9-03-files-rsync/rsynclogs/myrsync.log 2>&1
+```
 ![1st example user crontab file](9-03-files-rsync/user-crontab-in-own-logfile)
 - ежеминутный с записью результата в системный лог-файл
+``` bash
+*/1 * * * * ~/HW-9-Reliability/9-03-files-rsync/backupscript.sh 2>&1 | sudo logger
+```
 ![2nd example user crontab file](9-03-files-rsync/user-crontab-backup-every-1m-log-into-syslog)
 - один раз в сутки с записью результата в системный лог-файл 
+``` bash
+57 23 * * * ~/HW-9-Reliability/9-03-files-rsync/backupscript.sh 2>&1 | sudo logger
+```
 ![3rd example user crontab file](9-03-files-rsync/user-crontab-backup-once-a-day-at-23-57-log-into-syslog)
 - Скрин записей системного лога (сначала с интервалом в 1 мин, последняя - по однократному срабатыванию в 23:57)
 ![img системный лог](9-03-img-rsync/9-03-task-2-syslog.png)
