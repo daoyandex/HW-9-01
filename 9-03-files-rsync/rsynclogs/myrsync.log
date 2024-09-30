@@ -1,0 +1,54 @@
+sending incremental file list
+sending incremental file list
+sending incremental file list
+sending incremental file list
+sending incremental file list
+0
+              0 100%    0,00kB/s    0:00:00 (xfr#1, to-chk=12/13)
+sending incremental file list
+sending incremental file list
+sending incremental file list
+sending incremental file list
+sending incremental file list
+sending incremental file list
+sending incremental file list
+sending incremental file list
+sending incremental file list
+sending incremental file list
+./
+.1/
+.1/1.txt
+              0 100%    0,00kB/s    0:00:00 (xfr#1, to-chk=13/24)
+.2/
+.2/.2
+              0 100%    0,00kB/s    0:00:00 (xfr#2, to-chk=12/24)
+.5/
+.5/.53/
+.5/.53/.531.file
+              0 100%    0,00kB/s    0:00:00 (xfr#3, to-chk=8/24)
+.5/51/
+.5/52/
+.5/52/521.file
+              0 100%    0,00kB/s    0:00:00 (xfr#4, to-chk=7/24)
+sending incremental file list
+./
+6/
+6/61/
+6/62/
+sending incremental file list
+sending incremental file list
+sending incremental file list
+sending incremental file list
+sending incremental file list
+sending incremental file list
+sending incremental file list
+sending incremental file list
+sending incremental file list
+sending incremental file list
+sending incremental file list
+sending incremental file list
+sending incremental file list
+sending incremental file list
+sending incremental file list
+sending incremental file list
+sending incremental file list
