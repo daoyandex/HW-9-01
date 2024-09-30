@@ -11,7 +11,7 @@
 ```bash
 $ rsync -a --progress --checksum --exclude '.*/' /home/user/testhomedir/* /tmp/backup/
 ```
-<img src = "9-03-img-rsync/9-03-rsync-task-1.png" width = 100%>
+<img src = "9-03-img-rsync/9-03-rsync-task-1.png" width = 70%>
 
 
 ---
