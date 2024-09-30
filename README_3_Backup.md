@@ -27,6 +27,20 @@ $ rsync -a --progress --checksum --exclude '.*/' /home/user/testhomedir/* /tmp/b
 #### Скрин соответствия тестового каталога пользователя и /tmp/backup/
 <img src = "9-03-img-rsync/9-03-rsync-task-2-dirs.png" width = 70%>
 
+#### Порядок команд
+1. Для пользователя user в файле sudoers определим привилегии для записи в logger без требования пароля
+- $ sudo visudo
+- - user    ALL=(ALL:ALL) NOPASSWD: ALL
+
+2. Формируем файл скрипта с командой синхронизации каталогов
+``` bash
+#!/bin/bash
+sudo rsync -a --progress --checksum /home/user/testhomedir/ /tmp/backup/
+```
+![1st example user crontab file](9-03-files-rsync/backupscript.sh)
+3. Используем команду crontab -e для формирования/редактирования файла расписания для заданий пользователя user.
+Укажем расписание и вызываемый скрипт с командой (или конвейером) передачи вывода в лог-файл
+
 #### Версии Файлов crontab: 
 - ежеминутный в собственный лог-файл
 ``` bash
