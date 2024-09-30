@@ -34,7 +34,7 @@ $ rsync -a --progress --checksum --exclude '.*/' /home/user/testhomedir/* /tmp/b
 ![2nd example user crontab file](9-03-files-rsync/user-crontab-backup-every-1m-log-into-syslog)
 - один раз в сутки с записью результата в системный лог-файл 
 ![3rd example user crontab file](9-03-files-rsync/user-crontab-backup-once-a-day-at-23-57-log-into-syslog)
-Скрин записей системного лога (сначала с интервалом в 1 мин, последняя - по однократному срабатыванию в 23:57)
+- Скрин записей системного лога (сначала с интервалом в 1 мин, последняя - по однократному срабатыванию в 23:57)
 ![img системный лог](9-03-img-rsync/9-03-task-2-syslog.png)
 
 ---
