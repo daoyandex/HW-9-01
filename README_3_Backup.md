@@ -1,4 +1,4 @@
-# Домашнее задание к занятию " 1 `Disaster recovery`" - `Alekseev Aleksandr`
+# Домашнее задание к занятию " 3 `Резервное копирование`" - `Alekseev Aleksandr`
 
 ---
 
