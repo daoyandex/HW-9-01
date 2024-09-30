@@ -28,7 +28,7 @@ $ rsync -a --progress --checksum --exclude '.*/' /home/user/testhomedir/* /tmp/b
 <img src = "9-03-img-rsync/9-03-rsync-task-2-dirs.png" width = 70%>
 
 #### Порядок команд
-1. Для пользователя user в файле sudoers определим привилегии для записи в logger без требования пароля
+1. Для пользователя user в файле sudoers определим привилегии без требования ввода пароля
 - $ sudo visudo
 - - user    ALL=(ALL:ALL) NOPASSWD: ALL
 
@@ -38,6 +38,7 @@ $ rsync -a --progress --checksum --exclude '.*/' /home/user/testhomedir/* /tmp/b
 sudo rsync -a --progress --checksum /home/user/testhomedir/ /tmp/backup/
 ```
 ![1st example user crontab file](9-03-files-rsync/backupscript.sh)
+
 3. Используем команду crontab -e для формирования/редактирования файла расписания для заданий пользователя user.
 Укажем расписание и вызываемый скрипт с командой (или конвейером) передачи вывода в лог-файл
 
@@ -47,16 +48,21 @@ sudo rsync -a --progress --checksum /home/user/testhomedir/ /tmp/backup/
 */1 * * * * ~/HW-9-Reliability/9-03-files-rsync/backupscript.sh >> ~/HW-9-Reliability/9-03-files-rsync/rsynclogs/myrsync.log 2>&1
 ```
 ![1st example user crontab file](9-03-files-rsync/user-crontab-in-own-logfile)
+
+![1st example log-file](9-03-files-rsync/rsynclogs/myrsync.log)
+
 - ежеминутный с записью результата в системный лог-файл
 ``` bash
 */1 * * * * ~/HW-9-Reliability/9-03-files-rsync/backupscript.sh 2>&1 | sudo logger
 ```
 ![2nd example user crontab file](9-03-files-rsync/user-crontab-backup-every-1m-log-into-syslog)
+
 - один раз в сутки с записью результата в системный лог-файл 
 ``` bash
 57 23 * * * ~/HW-9-Reliability/9-03-files-rsync/backupscript.sh 2>&1 | sudo logger
 ```
 ![3rd example user crontab file](9-03-files-rsync/user-crontab-backup-once-a-day-at-23-57-log-into-syslog)
+
 - Скрин записей системного лога (сначала с интервалом в 1 мин, последняя - по однократному срабатыванию в 23:57)
 ![img системный лог](9-03-img-rsync/9-03-task-2-syslog.png)
 
@@ -66,6 +72,10 @@ sudo rsync -a --progress --checksum /home/user/testhomedir/ /tmp/backup/
 Настройте ограничение на используемую пропускную способность rsync до 1 Мбит/c
 Проверьте настройку, синхронизируя большой файл между двумя серверами
 На проверку направьте команду и результат ее выполнения в виде скриншота
+``` bash
+sudo rsync -a --progress --bwlimit=5000 --checksum 
+```
+![img](9-03-img-rsync/9-03-rsync-task-3*-longfile--bwlimit-1000.png)
 
 ---
 
