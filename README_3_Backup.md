@@ -11,7 +11,7 @@
 ```bash
 $ rsync -a --progress --checksum --exclude '.*/' /home/user/testhomedir/* /tmp/backup/
 ```
-<img src = "9-03-img-rsync/9-03-rsync-task-1.png" width = 70%>
+<img src = "9-03-img-rsync/9-03-rsync-task-1.png" width = 60%>
 
 
 ---
@@ -25,7 +25,7 @@ $ rsync -a --progress --checksum --exclude '.*/' /home/user/testhomedir/* /tmp/b
 
 
 #### Скрин соответствия тестового каталога пользователя и /tmp/backup/
-<img src = "9-03-img-rsync/9-03-rsync-task-2-dirs.png" width = 80%>
+<img src = "9-03-img-rsync/9-03-rsync-task-2-dirs.png" width = 70%>
 
 #### Версии Файлов crontab: 
 - ежеминутный в собственный лог-файл
