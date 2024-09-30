@@ -73,7 +73,7 @@ sudo rsync -a --progress --checksum /home/user/testhomedir/ /tmp/backup/
 Проверьте настройку, синхронизируя большой файл между двумя серверами
 На проверку направьте команду и результат ее выполнения в виде скриншота
 ``` bash
-sudo rsync -a --progress --bwlimit=5000 --checksum 
+sudo rsync -a --progress --bwlimit=1000 --checksum <src> <dst>
 ```
 ![img](9-03-img-rsync/9-03-rsync-task-3*-longfile--bwlimit-1000.png)
 
