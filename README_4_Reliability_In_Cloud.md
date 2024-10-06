@@ -22,7 +22,7 @@
 В качестве результата пришлите:
 
 1. Terraform Playbook.
-![main.tf](9-04-files/main.tf)
+![main.tf](9-04-files/main-task-1.tf)
 ![full archive with tf-files & filled ancible dir](9-04-files/HW-9-04.tar.gz)
 
 2. Скриншот статуса балансировщика и целевой группы.
